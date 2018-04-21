@@ -1,8 +1,8 @@
-women
-#Chirags-Air:~ chiragdaga$ cd '/Users/chiragdaga/Desktop/rWork/rProjects/analytics'
-#Chirags-Air:analytics chiragdaga$ 
-#git config --global user.email "chiragdaga777@gmail.com"
-#git config --global user.name "Chirag Daga"
+# Data Structures
 
-#Chirags-Air:~ chiragdaga$ cd '/Users/chiragdaga/Desktop/rWork/rProjects/analytics'
-#Chirags-Air:analytics chiragdaga$ 
+x <- c(0:10, 50)
+xm <- mean(x)
+c(xm, mean(x, trim = 0.10))
+
+y = c(1:10, 12:50)
+y
