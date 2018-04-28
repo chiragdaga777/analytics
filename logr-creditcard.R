@@ -11,6 +11,8 @@ class(Default)
 head(Default)
 attach(Default)
 
+balance
+head(balance)
 str(Default)
 Default
 dim(Default)
@@ -41,9 +43,20 @@ x
 grid.arrange(y, z, nrow=1)
 
 #Model
+
+?glm
+
 logitb = glm(default ~ balance, data=Default, family='binomial')
 summary(logitb)
 coef(logitb)
+
+?coef
+
+?nrow
+
+logit1 = glm(default ~ balance + student + income, data=Default, family='binomial')
+summary(logit1)
+exp(coef(logit1))
 
 exp(coef(logitb))
 range(Default$balance)

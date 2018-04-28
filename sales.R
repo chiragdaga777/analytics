@@ -52,8 +52,7 @@ barplot(df4$Revenue, col=1:6)
 sales %>% filter(region =='01-East') %>% head()
 sales %>% filter(revenue > 7771000) %>% select(custname, revenue)
 
-
-
+sales %>% arrange(desc(Revenue)) %>% head()
 
 
 

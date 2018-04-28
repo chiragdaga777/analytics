@@ -127,14 +127,16 @@ pie(x=df2$marks)
 df2= aggregate(marks ~ gender, data=df1, FUN=max)
 barplot(df2$marks, col=1:2)
 
-(rollno = 1:3)
-(sname = paste ('student',1:3,sep=''))
+(rollno = 1:30)
+(sname = paste ('student',1:30,sep=''))
 df1=data.frame(rollno, sname)
 df1
 
 #str, dim, class, summary
+str(df1)
 #filter
-df$rollno
+df1$rollno
+df1$sname
 
 ?aggregate
 
@@ -174,11 +176,14 @@ gradesF2
 
 
 # List----
-
-
-
-
-
+(v1 = 1:30)
+(m1 = matrix(1:24, nrow=6))
+(a1 = array (1:24, dim=c(4,3,2)))
+(df1 = data.frame(rollno=c(1:5), sname=c(paste('S',1:5, sep='-'))))
+class(v1); class(m1); class(a1); class(df1)
+L1 = list(v1, m1, a1, df1)
+L1
+L1[3]; L1[2]
 
 
 

@@ -1,6 +1,6 @@
 # Data Structures
 
-x <- c(0:10, 50)
+x <- c(0:10, 100)
 xm <- mean(x)
 c(xm, mean(x, trim = 0.10))
 

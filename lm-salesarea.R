@@ -37,7 +37,7 @@ cor(df$X,df$Y) ; cor(df$Y,df$X)
 plot(df$X, df$Y)  #simple command to plot : Next with features
 plot(y=df$Y, x=df$X,xlab='Area in sqft', ylab='Sales Amount', type='p', ylim=c(0, max(df$Y)), main='Plot of Area Vs Sales', xlim=c(0,max(df$X)), col='red',pch=3)
 
-abline(lm(df$Y ~ df$X), lty=3, lwd=4, col='yellow') # with regression line
+abline(lm(df$Y ~ df$X), lty=3, lwd=4, col='green') # with regression line
 abline(v=c(3,5),h=c(6,10), col=c('red','blue')) # few straight lines at x & y axis
 #Model
 fit1 = lm(Y ~ X, data=df) # create Simple Linear Model Y wrt X
@@ -56,7 +56,7 @@ fitted(fit1)
 #combine the data with Ypredicted, errors
 cbind(df, fitted(fit1), fitted(fit1)- df$Y, residuals(fit1))
 
-# Predictions
+# Predictions----
 (Y = 0.9645 + 1.6699 * 4)  # Predict Y for X=4
 (Y = coef(fit1)[1] + coef(fit1)[2] * 4)  # for X=4 using values from output of LM 
 
