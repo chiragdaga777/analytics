@@ -1,3 +1,7 @@
+#Logistic Regression
+#Binary Classification
+
+
 library(AER)
 data(Affairs)
 
