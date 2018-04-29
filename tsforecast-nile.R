@@ -7,6 +7,9 @@
 #Auto Regressive Integrated Moving Average 
 #Time-Series Forecasting Model
 
+#CRISP Model
+#Idealises sequence of events
+
 # river flow from year 1871 to 1970
 Nile  
 

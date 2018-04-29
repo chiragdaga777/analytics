@@ -28,8 +28,8 @@ load("twitter authentication.Rdata")
 
 setup_twitter_oauth(consumerKey, consumerSecret, AccessToken, AccessTokenSecret)
 
-search.string <- "#sachin_rt"
-no.of.tweets <- 100
+search.string <- "#ipl"
+no.of.tweets <- 5
 
 tweets <- searchTwitter(search.string, n=no.of.tweets,lang="en")
 tweets
